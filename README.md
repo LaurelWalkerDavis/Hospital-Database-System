@@ -1,21 +1,26 @@
-Hospital Database System
-The Hospital Database has been developed to facilitate fast and accurate information storage for a new hospital that services the needs of a rapidly growing retirement community. The system manages the primary care operation of the hospital, but not the financial operation. It has an easy to use interface that supports all the data entry and information gathering needs of the hospital.
+# Hospital Database System
 
-Run Program
+The Hospital Database has been developed to facilitate fast and accurate information storage for a new hospital that services the needs of a rapidly growing retirement community. The  system manages the primary care operation of the hospital, but not the financial operation. It has an easy to use interface that supports all the data entry and information gathering needs of the hospital.
+
+## Run Program
+
 Save the Hospital.jar file to your location of choice.
 
-Mac
+### Mac 
 On a Mac, open a terminal and navigate to the location of the Hospital.jar file. Execute the following command:
-
+```bash
 java -jar Hospital.jar
-Windows
+```
+### Windows 
 On a Windows machine, open a terminal and navigate to the location of the Hospital.jar file. Execute the following command:
-
+```bash
 java -jar Hospital.jar
-Usage
-The program allows you to request a lot of different data. Here are some examples of requests you can make.
+```
 
-Main Menu
+## Usage
+The program allows you to request a lot of different data. Here are some examples of requests you can make.
+### Main Menu
+```terminal
 Welcome to our database! We provide data from the following categories at our hospital:
 1. Room Utilization
 2. Patient Information
@@ -24,10 +29,15 @@ Welcome to our database! We provide data from the following categories at our ho
 0. Exit
 
  Enter the number beside the type of information you want: 
-Room Utilization
-List the rooms that are occupied, along with the associated patient names and the date the patient was admitted.
-List the rooms that are currently unoccupied.
-List all rooms in the hospital along with patient names and admission dates for those that are occupied.
+```
+
+### Room Utilization
+
+1. List the rooms that are occupied, along with the associated patient names and the date the patient was admitted.
+2. List the rooms that are currently unoccupied.
+3. List all rooms in the hospital along with patient names and admission dates for those that are occupied.
+
+```terminal
  Enter the number beside the query you want to execute or 0 to exit: 1
 
 room_num                       | last_name                      | first_name                     | admission_date                
@@ -45,15 +55,18 @@ room_num                       | last_name                      | first_name    
 11                             | Garcia                         | Malik                          | 2023-12-14 08:28:05           
 12                             | Rodriguez                      | Jasmine                        | 2023-12-07 10:47:29           
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Patient Information
-List all patients in the database, with full personal information.
-List all patients currently admitted to the hospital. List only patient identification number and name.
-List all patients who were discharged in a given date range. List only patient identification number and name.
-List all patients who were admitted within a given date range. List only patient identification number and name.
-For a given patient (patient identification number), list all admissions to the hospital along with the diagnosis for each admission.
-For a given patient (patient identification number), list all treatments that were administered. Group treatments by admissions. List admissions in descending chronological order, and list treatments in ascending chronological order within each admission.
-List patients who were admitted to the hospital within 30 days of their last discharge date. For each patient list their patient identification number, name, diagnosis, and admitting doctor.
-For each patient that has ever been admitted to the hospital, list their total number of admissions, average duration of each admission, longest span between admissions, shortest span between admissions, and average span between admissions.
+
+```
+### Patient Information
+1. List all patients in the database, with full personal information.
+2. List all patients currently admitted to the hospital. List only patient identification number and name.
+3. List all patients who were discharged in a given date range. List only patient identification number and name.
+4. List all patients who were admitted within a given date range. List only patient identification number and name.
+5. For a given patient (patient identification number), list all admissions to the hospital along with the diagnosis for each admission.
+6. For a given patient (patient identification number), list all treatments that were administered. Group treatments by admissions. List admissions in descending chronological order, and list treatments in ascending chronological order within each admission.
+7. List patients who were admitted to the hospital within 30 days of their last discharge date. For each patient list their patient identification number, name, diagnosis, and admitting doctor.
+8. For each patient that has ever been admitted to the hospital, list their total number of admissions, average duration of each admission, longest span between admissions, shortest span between admissions, and average span between admissions.
+```
  Enter the number beside the query you want to execute or 0 to exit: 3
 
  Enter the beginning date range in this format: 'yyyy-MM-dd': 2023-11-01
@@ -77,12 +90,15 @@ patient_ID                     | patient_name
 2757                           | Kenya T. Mendoza              
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Diagnosis and Treatment Information
-List the diagnoses given to patients, in descending order of occurrences. List diagnosis identification number, name, and total occurrences of each diagnosis.
-List the diagnoses given to hospital patients, in descending order of occurrences. List diagnosis identification number, name, and total occurrences of each diagnosis.
-List the treatments performed on admitted patients, in descending order of occurrences. List treatment identification number, name, and total number of occurrences of each treatment.
-List the diagnoses associated with patients who have the highest occurrences of admissions to the hospital, in ascending order or correlation.
-For a given treatment occurrence, list the patient name and the doctor who ordered the treatment.
+
+```
+### Diagnosis and Treatment Information
+1. List the diagnoses given to patients, in descending order of occurrences. List diagnosis identification number, name, and total occurrences of each diagnosis.
+2. List the diagnoses given to hospital patients, in descending order of occurrences. List diagnosis identification number, name, and total occurrences of each diagnosis.
+3. List the treatments performed on admitted patients, in descending order of occurrences. List treatment identification number, name, and total number of occurrences of each treatment.
+4. List the diagnoses associated with patients who have the highest occurrences of admissions to the hospital, in ascending order or correlation.
+5. For a given treatment occurrence, list the patient name and the doctor who ordered the treatment.
+```terminal
  Enter the number beside the query you want to execute or 0 to exit: 5
 
  Enter the number associated with the data you want to obtain.
@@ -97,12 +113,15 @@ Malik A. Garcia                | Ji-hoon I. Runningwolf
 
 
  Enter the number beside the query you want to execute or 0 to exit: 
-Employee Information
-List all workers at the hospital, in ascending last name, first name order. For each worker, list their, name, and job category.
-List the primary doctors of patients with a high admission rate (at least 4 admissions within a one-year time frame).
-For a given doctor (employee ID), list all associated diagnoses in descending order of occurrence. For each diagnosis, list the total number of occurrences for the given doctor.
-For a given doctor (employee ID, list all treatments that they ordered in descending order of occurrence. For each treatment, list the total number of occurrences for the given doctor.
-List employees who have been involved in the treatment of every admitted patient.
+```
+### Employee Information
+1. List all workers at the hospital, in ascending last name, first name order. For each worker, list their, name, and job category.
+2. List the primary doctors of patients with a high admission rate (at least 4 admissions within a one-year time frame).
+3. For a given doctor (employee ID), list all associated diagnoses in descending order of occurrence. For each diagnosis, list the total number of occurrences for the given doctor.
+4. For a given doctor (employee ID, list all treatments that they ordered in descending order of occurrence. For each treatment, list the total number of occurrences for the given doctor.
+5. List employees who have been involved in the treatment of every admitted patient.
+
+```terminal
  Enter the number beside the query you want to execute or 0 to exit: 4
  Enter the number associated with the data you want to obtain.
 (Treatment ID, Doctor ID, or Patient ID). Enter 9 to go back or 0 to exit: 1021
@@ -122,7 +141,10 @@ treatment_ID                   | treatment_name                 | order_timestam
 4160                           | Insulin                        | 2023-11-27 00:00:00            | 1                             
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Exit
+
+```
+### Exit
+```terminal
 Welcome to our database! We provide data from the following categories at our hospital:
 1. Room Utilization
 2. Patient Information
@@ -132,8 +154,12 @@ Welcome to our database! We provide data from the following categories at our ho
 
  Enter the number beside the type of information you want: 0
 Thank you for querying with us!
-Authorship
+```
+
+## Authorship
+
 All work completed by Laurel Walker Davis © 2023.
 
-Purpose
+## Purpose
+
 This project was created as part of the Database 2 course at Auburn University.
