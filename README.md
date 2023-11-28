@@ -12,7 +12,7 @@ On a Mac, open a terminal and navigate to the location of the Hospital.jar file.
 java -jar Hospital.jar
 ```
 ### Windows 
-On a Windows machine, open a terminal and navigate to the location of the Hospital.jar file. Execute the following command:
+On a Windows machine, open the command prompt and navigate to the location of the Hospital.jar file. Execute the following command:
 ```bash
 java -jar Hospital.jar
 ```
