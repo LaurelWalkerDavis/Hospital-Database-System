@@ -6,7 +6,7 @@ The Hospital Database has been developed to facilitate fast and accurate informa
 SQL and Java
 
 ## Demonstration
-[Hospital Database Demonstration](([https://youtu.be/EDtDbJxRaEw]))
+[Hospital Database Demonstration](https://youtu.be/EDtDbJxRaEw)
 
 ## Run Program
 
